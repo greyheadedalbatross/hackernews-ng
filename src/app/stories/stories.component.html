@@ -1,0 +1,8 @@
+<div class="story-list-nav">
+  <a *ngIf="currentPage>1; else elseBlock" [routerLink]="['/',storyType, (currentPage-1)]">< prev</a>
+  <ng-template #elseBlock>
+    <a class="disabled">< prev</a>
+  </ng-template>
+  <span> {{currentPage}}/25 </span>
+  <a [routerLink]="['/',storyType, (currentPage+1)]"> more</a>
+</div>

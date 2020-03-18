@@ -1,0 +1,10 @@
+.story-list-nav {
+  padding: 15px 30px;
+  border: 1px solid purple;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+a.disabled {
+  color: #cccccc;
+}
